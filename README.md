@@ -115,14 +115,6 @@ Open an [issue](https://github.com/gzzheng/survival-log-noexposure/issues) and i
 - the relevant lines from `BepInEx\LogOutput.log`
 - your config file contents, and steps to reproduce
 
-## Support
-
-This mod is free, and it stays free. If it saved you some annoyance and you feel like saying thanks, you can buy me a coffee on 爱发电 (Alipay / WeChat Pay):
-
-**[→ 爱发电](https://afdian.com/a/YOUR_ID)**
-
-Donations are voluntary and buy nothing: no extra features, no early builds, no priority support. Every feature is the same for everyone.
-
 ## License
 
 **PolyForm Noncommercial License 1.0.0** — see [LICENSE](LICENSE) for the full, binding text.

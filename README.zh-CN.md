@@ -115,14 +115,6 @@ dotnet build -c Release -p:BepInExDir="你的\BepInEx\路径"
 - `BepInEx\LogOutput.log` 里的相关行
 - 配置文件内容与复现步骤
 
-## 支持这个项目
-
-这个 mod 免费，以后也免费。如果它帮你省了点事、你想表达一下谢意，可以在爱发电请我喝杯咖啡（支付宝 / 微信均可）：
-
-**[→ 爱发电](https://afdian.com/a/YOUR_ID)**
-
-捐助完全自愿，也不换取任何东西——没有额外功能、没有提前版本、没有优先支持。所有功能对所有人一视同仁。
-
 ## 授权
 
 **PolyForm Noncommercial License 1.0.0**，完整且具有法律效力的条款见 [LICENSE](LICENSE)。
