@@ -36,7 +36,7 @@
 
 ## 安装
 
-1. 把 **BepInEx 6 IL2CPP x64** 装到游戏根目录，也就是 `Survival Log.exe` 所在的那一层。解压后应能在 exe 同级看到 `BepInEx\`、`winhttp.dll` 和 `doorstop_config.ini`。
+1. 把 **BepInEx 6 IL2CPP x64** 装到游戏根目录，也就是 `SurvivalLog.exe` 所在的那一层。解压后应能在 exe 同级看到 `BepInEx\`、`winhttp.dll` 和 `doorstop_config.ini`。
 2. 启动游戏一次再退出。BepInEx 会生成 `BepInEx\interop\`，IL2CPP 插件依赖这个目录。
 3. 把 `NoExposure.dll` 放进 `BepInEx\plugins\`。
 4. 启动游戏，查看 `BepInEx\LogOutput.log`，应出现：

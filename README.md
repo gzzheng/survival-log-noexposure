@@ -36,7 +36,7 @@ The value is matched by class and member name, not by memory offsets, so the pat
 
 ## Installation
 
-1. Install **BepInEx 6 IL2CPP x64** into the game folder — the folder that contains `Survival Log.exe`. Extract the archive there so you get `BepInEx\`, `winhttp.dll` and `doorstop_config.ini` next to the executable.
+1. Install **BepInEx 6 IL2CPP x64** into the game folder — the folder that contains `SurvivalLog.exe`. Extract the archive there so you get `BepInEx\`, `winhttp.dll` and `doorstop_config.ini` next to the executable.
 2. Launch the game once, then quit. BepInEx generates `BepInEx\interop\`, which IL2CPP plugins require.
 3. Copy `NoExposure.dll` into `BepInEx\plugins\`.
 4. Start the game and check `BepInEx\LogOutput.log`. You should see:

@@ -14,12 +14,14 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
-  <!-- Path to the BepInEx 6 core folder that contains BepInEx.Core.dll.
-       Override per machine with:  dotnet build -p:BepInExDir="D:\path\to\BepInEx"
-       or by setting the BEPINEX_DIR environment variable. -->
+  <!-- Path to the BepInEx 6 install that belongs to the game (the folder that
+       contains core\BepInEx.Core.dll). Override per machine with:
+         dotnet build -p:BepInExDir="D:\path\to\BepInEx"
+       or by setting the BEPINEX_DIR environment variable.
+       The value below is the author's local default and will not exist on your machine. -->
   <PropertyGroup>
     <BepInExDir Condition="'$(BepInExDir)' == '' and '$(BEPINEX_DIR)' != ''">$(BEPINEX_DIR)</BepInExDir>
-    <BepInExDir Condition="'$(BepInExDir)' == ''">C:\games\BepInEx</BepInExDir>
+    <BepInExDir Condition="'$(BepInExDir)' == ''">C:\games\Survival Log\BepInEx</BepInExDir>
   </PropertyGroup>
 
   <ItemGroup>
