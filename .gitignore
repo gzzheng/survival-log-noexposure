@@ -1,0 +1,25 @@
+# Build output
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs
+*.log
+LogOutput.log
+
+# Never commit binaries or framework assemblies:
+# releases are attached to GitHub Releases, built from source.
+*.dll
+*.pdb
+*.zip

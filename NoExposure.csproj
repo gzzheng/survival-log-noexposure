@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>NoExposure</AssemblyName>
+    <RootNamespace>NoExposure</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>gzzheng</Authors>
+    <Product>NoExposure</Product>
+    <Description>BepInEx plugin for Survival Log: controls the growth rate of the exploration exposure value.</Description>
+    <RepositoryUrl>https://github.com/gzzheng/survival-log-noexposure</RepositoryUrl>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <!-- Path to the BepInEx 6 core folder that contains BepInEx.Core.dll.
+       Override per machine with:  dotnet build -p:BepInExDir="D:\path\to\BepInEx"
+       or by setting the BEPINEX_DIR environment variable. -->
+  <PropertyGroup>
+    <BepInExDir Condition="'$(BepInExDir)' == '' and '$(BEPINEX_DIR)' != ''">$(BEPINEX_DIR)</BepInExDir>
+    <BepInExDir Condition="'$(BepInExDir)' == ''">C:\games\BepInEx</BepInExDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(BepInExDir)\core\BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(BepInExDir)\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExDir)\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(BepInExDir)\core\Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

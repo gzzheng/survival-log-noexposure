@@ -1,0 +1,74 @@
+name: Bug report
+description: Something is not working as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. A log file is the single most useful thing you can attach —
+        without it the cause is usually impossible to guess.
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game build
+      description: Steam → right-click Survival Log → Properties → Installed Files. The build number is also printed at the top of LogOutput.log.
+      placeholder: e.g. 1.1.18153
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options:
+        - BepInEx 6 IL2CPP (x64)
+        - BepInEx 6 IL2CPP (x86)
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, what you got, and the steps to reproduce it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: LogOutput.log
+      description: Paste the lines mentioning NoExposure or Harmony. Drag the file into the box to attach it.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Config file
+      description: Contents of BepInEx/config/gzzheng.survival-log.noexposure.cfg, if you changed it.
+      render: ini
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I am running the latest release of the mod
+          required: true
+        - label: I have another mod that patches the exposure value disabled while testing
+          required: false
