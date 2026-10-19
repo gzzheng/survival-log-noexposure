@@ -30,7 +30,8 @@ The value is matched by class and member name, not by memory offsets, so the pat
 
 | | |
 |---|---|
-| Game | *Survival Log* (Early Access), Windows x64, IL2CPP build |
+| Game | *Survival Log*, Windows x64, IL2CPP build |
+| Game version | `1.0.0` — other builds are untested |
 | Loader | [BepInEx 6 **IL2CPP** (x64)](https://builds.bepinex.dev/projects/bepinex_be) — BepInEx 5 will **not** work |
 | Runtime | .NET 6 (bundled with the BepInEx 6 IL2CPP build) |
 

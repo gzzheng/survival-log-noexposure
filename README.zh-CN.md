@@ -30,7 +30,8 @@
 
 | | |
 |---|---|
-| 游戏 | 《生存日志》抢先体验版，Windows x64，IL2CPP 构建 |
+| 游戏 | 《生存日志》，Windows x64，IL2CPP 构建 |
+| 游戏版本 | `1.0.0` —— 其他版本尚未测试 |
 | 加载器 | [BepInEx 6 **IL2CPP**（x64）](https://builds.bepinex.dev/projects/bepinex_be) —— BepInEx 5 **不可用** |
 | 运行时 | .NET 6（BepInEx 6 IL2CPP 版本已自带） |
 
